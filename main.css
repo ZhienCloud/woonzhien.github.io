@@ -1,0 +1,179 @@
+body{
+    min-height:100vh;
+    min-width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+   
+}
+h1{
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: auto;
+}
+
+#main{
+    height:1500px;
+    width:800px;
+    background-image: url("Roadphoto.png");
+    background-size:100%;
+    z-index: 1;
+    /* animation: background-scrolling-reverse 1s infinite; */
+   
+}
+
+/* @keyframes background-scrolling-reverse {
+    from {
+        transform: translateY(100px);
+      }
+      to {
+        transform: translateY(4030px);
+      }
+} */
+
+#blue-car{
+    background-image: url("BlueCar.png");
+    background-size: 95%;
+    height: 105px;
+    width: 75px;
+    text-align: center;
+    position:relative;
+    animation: move 2s linear infinite;
+    margin:auto;
+    top:0px;
+    left:-180px;
+
+}
+
+
+#green-car{
+    background-image: url("GreenCar.png");
+    background-size: 95%;
+    height: 135px;
+    width: 75px;
+    text-align: center;
+    position: relative;
+    animation: movegreen 3s linear infinite;
+    margin:auto;
+    top:0px;
+    left:-60px;
+    transform: rotate(180deg)
+
+    
+
+}
+
+#pink-car{
+    background-image: url("PinkCar.png");
+    background-size: 95%;
+    height: 135px;
+    width: 75px;
+    text-align: center;
+    position: relative;
+    animation: movepink 2s linear infinite;
+    margin:auto;
+    top:0px;
+    left:60px; 
+    transform: rotate(180deg)
+
+}
+
+#yellow-car{
+    background-image: url("YellowCar.png");
+    background-size: 95%;
+    height: 135px;
+    width: 75px;
+    text-align: center;
+    position: relative;
+    animation: moveyellow 3s linear infinite;
+    margin:auto;
+    top:auto;
+    left:180px; 
+    transform: rotate(180deg);
+
+}
+
+
+
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top:1400px;
+    }
+    
+}
+
+@keyframes movegreen {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top:1200px;
+    }
+    
+}
+
+@keyframes movepink {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top:1000px;
+    }
+    
+}
+
+
+
+@keyframes moveyellow {
+    0%{
+        top: -300px;
+    }
+    100%{
+        top:900px;
+    }
+    
+}
+
+
+
+#red-car{
+    background-image: url("RedCar.png");
+    background-size: 95%;
+    height: 135px;
+    width: 75px;
+    margin:auto;
+    position:relative;
+    
+ 
+    bottom:-800px;
+ 
+
+}
+
+
+#mainroad {
+    height:100%;
+    width: 100%;
+    background-color: grey;
+    
+}
+
+#score {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: magenta solid;
+    text-decoration-color: black;
+    margin:auto;
+    position: relative;
+   left:41.5%;
+   top:-30%;
+}
