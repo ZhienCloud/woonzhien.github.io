@@ -1,3 +1,42 @@
+#popup {
+    display: none;
+    position: fixed;
+    width:50%;
+    height:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+#name{
+    display:block;
+    position: fixed;
+    top:40%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%); 
+    width: 300px; /* Increase the width */
+    height: 60px; /* Increase the height */
+    font-size: 18px; 
+}
+  #start-game {
+    display:block;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    width: 150px; /* Increase the width */
+    height: 60px; /* Increase the height */
+    font-size: 24px; /* Increase the font size */
+  }
+
 body{
     min-height:100vh;
     min-width:100vw;
@@ -7,20 +46,30 @@ body{
     padding: 0;
     margin: 0;
     overflow: hidden;
+    background-color: grey;
    
 }
+
 h1{
     text-align: center;
     position: absolute;
     margin: auto;
-    top: auto;
+    top: 0%;
 }
 
+h2{
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    
+}
+
+
 #main{
-    height:1500px;
-    width:800px;
+    height:100vh;   
+    width:50vh;
     background-image: url("Roadphoto.png");
-    background-size:100%;
+    background-size:contain;
     z-index: 1;
     /* animation: background-scrolling-reverse 1s infinite; */
    
@@ -166,14 +215,43 @@ h1{
 }
 
 #score {
-    background-color: white;
-    height: 50px;
-    width: 50px;
+    background-color: magenta;
+    height: 40px;
+    width: 150px;
     text-align: center;
-    border: magenta solid;
+    border: rgb(255, 0, 157) solid;
     text-decoration-color: black;
     margin:auto;
     position: relative;
-   left:41.5%;
-   top:-30%;
+    left:63%;
+    top:-10.75%;
+    font-family: cursive;
+    font-size: 25px;
+    border-radius: 25px;
+
+   
 }
+
+#high-scores {
+    background-color: rgb(1, 232, 248);
+    height: 400px;
+    width: 150px;
+    text-align: center;
+    border: blue solid;
+    border-radius: 25px;
+    text-decoration-color: black;
+    margin:auto;
+    position: relative;
+    left:63%;
+    top:-10%;
+    font-family: cursive;
+    font-size: medium;
+    
+}
+
+#keepscore{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
