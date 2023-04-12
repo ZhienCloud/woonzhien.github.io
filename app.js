@@ -19,6 +19,7 @@ $(() => {
     });
   });
 
+
   //car positioning for blue,yellow,pink and green
 
   var counter = 0;
@@ -63,17 +64,17 @@ $(() => {
     // Get the current position of the object
     var currentPos = parseInt($("#red-car").css("left"));
 
-    var minPos = -240;
-    var maxPos = 240;
+    var minPos = -140;
+    var maxPos = 140;
     // Check which arrow key was pressed
     if (e.keyCode == 37 && currentPos > minPos) {
       // Left arrow key
       // Move the object left by 10 pixels
-      $("#red-car").css("left", currentPos - 20);
+      $("#red-car").css("left", currentPos - 40);
     } else if (e.keyCode == 39 && currentPos < maxPos) {
       // Right arrow key
       // Move the object right by 10 pixels
-      $("#red-car").css("left", currentPos + 20);
+      $("#red-car").css("left", currentPos + 40);
     }
   });
 
@@ -82,19 +83,6 @@ $(() => {
   let score = 0;
   let highScores = [];
 
-  function resetGame() {
-    score = 0;
-    $("#score").text("Score: " + score);
-    $bluecar.css({ top: "0px", left: "-23%" });
-    $greencar.css({ top: "0px", left: "-8%" });
-    $pinkcar.css({ top: "0px", left: "8%" });
-    $yellowcar.css({ top: "0px", left: "23%" });
-    $("#message").text("");
-    const nameValue = $("#name").val();
-    $("#name").val(nameValue);
-  }
-
-  
 
 
   function detectCollision() {
@@ -120,6 +108,7 @@ $(() => {
       highScores.push({ name: name, score: score });
       updateHighScores(highScores);
       alert(`Game Over! Your score is ${score}. Well done, ${name}!`);
+   
       resetGame();
     }
     if (
@@ -146,6 +135,7 @@ $(() => {
         highScores.push({ name: name, score: score });
         updateHighScores(highScores);
         alert(`Game Over! Your score is ${score}. Well done, ${name}!`);
+
         resetGame();
        
      
@@ -156,7 +146,6 @@ $(() => {
       redcarPos.top < yellowcarPos.top + $yellowcar.height() &&
       redcarPos.top + $redcar.height() > yellowcarPos.top
     ) {
-
       const name = $("#name").val();
       highScores.push({ name: name, score: score });
       updateHighScores(highScores);
@@ -172,8 +161,81 @@ $(() => {
       $("#score").text("Score: " + score);
     }
     
+    
+
+
+
    
   }
+
+  // function resetGame() {
+  //   gameStarted = false;
+  //   score = 0;
+  //   $("#score").text(score);
+  
+  //   $bluecar.off("animationiteration");
+  //   $redcar.off("animationiteration");
+  //   $greencar.off("animationiteration");
+  //   $pinkcar.off("animationiteration");
+  //   $yellowcar.off("animationiteration");
+  
+  //   $bluecar.css("left", "-23%");
+  //    $greencar.css("left", "8%");
+  //   $pinkcar.css("left", "23%");
+  //   $yellowcar.css("left", "-8%");
+  
+  //   $("#popup").show();
+  //   $("#main").hide();
+  // }
+
+
+
+  // function resetGame() {
+  //   score = 0;
+  //   $("#score").text("Score: " + score);
+  //   $bluecar.css("top" , "0%");
+  //   $bluecar.css("left" , "-23%");
+  //   $greencar.css("top" , "0%");
+  //   $pinkcar.css("top" , "0%");
+  //   $yellowcar.css("top" , "0%");
+  //   $greencar.css("left", "8%");
+  //   $pinkcar.css("left", "23%");
+  //   $yellowcar.css("left", "-8%");
+  //   $("#message").text("");
+  //   const nameValue = $("#name").val();
+  //   $("#name").val(nameValue);
+    
+  // }
+
+  // function resetGame() {
+  //   score = 0;
+  //   $("#score").text("Score: " + score);
+  //   $bluecar.css("top", "0%");
+  //   $bluecar.css("left", "-23%");
+  //   $greencar.css("top", "0%");
+  //   $pinkcar.css("top", "0%");
+  //   $yellowcar.css("top", "0%");
+  //   $greencar.css("left", "8%");
+  //   $pinkcar.css("left", "23%");
+  //   $yellowcar.css("left", "-8%");
+  //   $("#message").text("");
+  //   const nameValue = $("#name").val();
+  //   $("#name").val(nameValue);
+  //   // Add animation class to all cars
+  //   $("#blue-car").addClass("animate");
+  //   $("#green-car").addClass("animate");
+  //   $("#pink-car").addClass("animate");
+  //   $("#yellow-car").addClass("animate");
+  // }
+  
+
+
+
+
+
+
+
+
 
   setInterval(detectCollision, 50);
   function updateHighScores(highScores) {
@@ -204,3 +266,24 @@ $(() => {
 
 
 });
+
+// function resetGame() {
+//   gameStarted = false;
+//   score = 0;
+//   $("#score").text(score);
+
+//   $bluecar.off("animationiteration");
+//   $redcar.off("animationiteration");
+//   $greencar.off("animationiteration");
+//   $pinkcar.off("animationiteration");
+//   $yellowcar.off("animationiteration");
+
+//   $bluecar.css("left", "-23%");
+//    $greencar.css("left", "8%");
+//   $pinkcar.css("left", "23%");
+//   $yellowcar.css("left", "-8%");
+
+//   $("#popup").show();
+//   $("#main").hide();
+// }
+

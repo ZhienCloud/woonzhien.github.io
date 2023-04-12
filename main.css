@@ -21,8 +21,8 @@
     left:50%;
     text-align: center;
     transform: translate(-50%, -50%); 
-    width: 300px; /* Increase the width */
-    height: 60px; /* Increase the height */
+    width: 43%; 
+    height: 8%; 
     font-size: 18px; 
 }
   #start-game {
@@ -32,9 +32,9 @@
     left:50%;
     transform: translate(-50%, -50%);
     
-    width: 150px; /* Increase the width */
-    height: 60px; /* Increase the height */
-    font-size: 24px; /* Increase the font size */
+    width: 21%; 
+    height: 8%;
+    font-size: 134%; 
   }
 
 body{
@@ -86,30 +86,30 @@ h2{
 
 #blue-car{
     background-image: url("BlueCar.png");
-    background-size: 95%;
-    height: 105px;
-    width: 75px;
+    background-size: 105%;
+    height: 10.5%;
+    width: 13%;
     text-align: center;
     position:relative;
     animation: move 2s linear infinite;
     margin:auto;
     top:0px;
-    left:-180px;
+    left:-23%;
 
 }
 
 
 #green-car{
     background-image: url("GreenCar.png");
-    background-size: 95%;
-    height: 135px;
-    width: 75px;
+    background-size: 105%;
+    height: 13%;
+    width: 13%;
     text-align: center;
     position: relative;
     animation: movegreen 3s linear infinite;
     margin:auto;
     top:0px;
-    left:-60px;
+    left:-8%;
     transform: rotate(180deg)
 
     
@@ -118,30 +118,30 @@ h2{
 
 #pink-car{
     background-image: url("PinkCar.png");
-    background-size: 95%;
-    height: 135px;
-    width: 75px;
+    background-size: 105%;
+    height: 13%;
+    width: 13%;
     text-align: center;
     position: relative;
     animation: movepink 2s linear infinite;
     margin:auto;
     top:0px;
-    left:60px; 
+    left:8%; 
     transform: rotate(180deg)
 
 }
 
 #yellow-car{
     background-image: url("YellowCar.png");
-    background-size: 95%;
-    height: 135px;
-    width: 75px;
+    background-size: 105%;
+    height: 13%;
+    width: 13%;
     text-align: center;
     position: relative;
     animation: moveyellow 3s linear infinite;
     margin:auto;
     top:auto;
-    left:180px; 
+    left:23%; 
     transform: rotate(180deg);
 
 }
@@ -150,31 +150,33 @@ h2{
 
 @keyframes move {
     0%{
-        top: 0px;
+        top: 0%;
     }
     100%{
-        top:1400px;
+        top:120%;
     }
     
 }
 
 @keyframes movegreen {
     0%{
-        top: -100px;
+        top: -20%;
     }
     100%{
-        top:1200px;
+        top:120%;
     }
+    
     
 }
 
 @keyframes movepink {
     0%{
-        top: -200px;
+        top: -30%;
     }
     100%{
-        top:1000px;
+        top:120%;
     }
+    
     
 }
 
@@ -182,11 +184,12 @@ h2{
 
 @keyframes moveyellow {
     0%{
-        top: -300px;
+        top: -50%;
     }
     100%{
-        top:900px;
+        top:120%;
     }
+    
     
 }
 
@@ -195,13 +198,13 @@ h2{
 #red-car{
     background-image: url("RedCar.png");
     background-size: 95%;
-    height: 135px;
-    width: 75px;
+    height: 13.5%;
+    width: 14.5%;
     margin:auto;
     position:relative;
     
  
-    bottom:-800px;
+    bottom:-30%;
  
 
 }
@@ -216,15 +219,15 @@ h2{
 
 #score {
     background-color: magenta;
-    height: 40px;
-    width: 150px;
+    height: 4%;
+    width: 30%;
     text-align: center;
     border: rgb(255, 0, 157) solid;
     text-decoration-color: black;
     margin:auto;
     position: relative;
-    left:63%;
-    top:-10.75%;
+    left:65%;
+    top:-20.75%;
     font-family: cursive;
     font-size: 25px;
     border-radius: 25px;
@@ -234,16 +237,16 @@ h2{
 
 #high-scores {
     background-color: rgb(1, 232, 248);
-    height: 400px;
-    width: 150px;
+    height: 40%;
+    width: 30%;
     text-align: center;
     border: blue solid;
     border-radius: 25px;
     text-decoration-color: black;
     margin:auto;
     position: relative;
-    left:63%;
-    top:-10%;
+    left:65%;
+    top:-20%;
     font-family: cursive;
     font-size: medium;
     
