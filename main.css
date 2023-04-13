@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%); 
     width: 43%; 
     height: 8%; 
-    font-size: 18px; 
+    font-size: 1.3vw; 
 }
   #start-game {
     display:block;
@@ -34,7 +34,7 @@
     
     width: 21%; 
     height: 8%;
-    font-size: 134%; 
+    font-size: 1.5vw; 
   }
 
 body{
@@ -179,6 +179,18 @@ h2{
     
     
 }
+
+@keyframes stop {
+    0%{
+        top: -30%;
+    }
+    100%{
+        top:-30%;
+    }
+    
+    
+}
+
 
 
 
